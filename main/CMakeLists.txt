@@ -1,0 +1,10 @@
+idf_component_register(SRCS "BLE.c" "check.c" 
+                            "dealwith_MCU_data.c"
+                            "app_main_StateMachine.c" 
+                            "UART_config.c"
+                            "AES_CBC.c"
+                            "ota_check.c"
+                            "WiFi_Scan.c"
+                            "MQTT_app.c" 
+                            "WiFi_Connect.c"
+                    INCLUDE_DIRS "HEAD"".")
