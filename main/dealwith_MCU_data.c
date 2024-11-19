@@ -15,7 +15,7 @@
 /**
  * @brief 心跳检测定时器回调函数
  * 心跳检测定时器1 1s触发一次：下达心跳检测和查询指令到MCU
- * 心跳检测定时器3 200ms触发一次：MCU响应MQTT指令超时处理
+ * 响应检测定时器3 200ms触发一次：MCU响应MQTT指令超时处理
  */
 static void vTimerCallback1(TimerHandle_t xTimer) {  
     static int Heartbeat_time_cout = IDLE_HEARTBEAT_PERIOD_S;       
