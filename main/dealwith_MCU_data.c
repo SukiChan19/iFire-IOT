@@ -314,7 +314,7 @@ bool is_fifo_full(void) {
  * @brief 发布 FIFO 中的数据到发布数据缓冲区
  */
 void publish_cached_data() {
-    while (!is_fifo_empty()) {
+    if (!is_fifo_empty()) {
         publish_data_t data;
         dequeue_uart_data(&data); // 从 FIFO 中获取数据
         // 发布到 MQTT
